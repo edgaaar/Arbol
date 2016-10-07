@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/Arbol_Puzzel.dir/src/NodoA.cpp.o CMakeFiles/Arbol_Puzzel.dir/src/ArbolP.cpp.o CMakeFiles/Arbol_Puzzel.dir/src/main.cpp.o  -o Arbol_Puzzel -rdynamic 

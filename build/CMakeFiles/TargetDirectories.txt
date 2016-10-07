@@ -1,0 +1,3 @@
+/home/edgar/Programas/Arbol/build/CMakeFiles/edit_cache.dir
+/home/edgar/Programas/Arbol/build/CMakeFiles/rebuild_cache.dir
+/home/edgar/Programas/Arbol/build/CMakeFiles/Arbol_Puzzel.dir
