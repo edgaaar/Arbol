@@ -14,7 +14,7 @@ public:
 	bool ElimNodo(int ref);
 	bool ExisteEl(int ref);
 	void ImprimeArbol(void);
-	void ImprimeArbol(NodoA* aux, char* espacio);
+	void ImprimeArbol(NodoA* aux, std::string espacio);
 	std::stack<NodoA*> Camino(NodoA* aux);
 
 };

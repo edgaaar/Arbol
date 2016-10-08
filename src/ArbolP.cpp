@@ -113,7 +113,7 @@ bool ArbolP::ExisteEl(int ref)
 
 
 
-void ArbolP::ImprimeArbol(NodoA* aux, char* espacio)
+void ArbolP::ImprimeArbol(NodoA* aux, std::string espacio)
 {
 	
 	for(int i=0; i<aux->Hijos.size(); ++i)
@@ -122,15 +122,15 @@ void ArbolP::ImprimeArbol(NodoA* aux, char* espacio)
 			std::cout<<aux->Hijos[i]->dato<<std::endl;
 
 			if (aux->Hijos[i]->Hijos.size() != 0)
-			
-			ImprimeArbol(aux->Hijos[i], strcat(espacio,"├----"));
+				ImprimeArbol(aux->Hijos[i], espacio+"└————");
+			espacio.substr(6);
 	}
 }
 
 void ArbolP::ImprimeArbol()
 {
 	NodoA* aux = Raiz;
-	char espacio[90] = "├----";
+	std::string espacio = "└————";
 	std::cout<<aux->dato<<std::endl;
 	ImprimeArbol(aux, espacio);
 }
