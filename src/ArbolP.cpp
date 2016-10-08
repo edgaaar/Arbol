@@ -121,19 +121,16 @@ void ArbolP::ImprimeArbol(NodoA* aux, char* espacio)
 			std::cout<<espacio;
 			std::cout<<aux->Hijos[i]->dato<<std::endl;
 
-			if (i+1==aux->Hijos.size())
-				strcat(espacio,"	");
+			if (aux->Hijos[i]->Hijos.size() != 0)
 			
-			ImprimeArbol(aux->Hijos[i], espacio);
-			
-		
+			ImprimeArbol(aux->Hijos[i], strcat(espacio,"├----"));
 	}
 }
 
 void ArbolP::ImprimeArbol()
 {
 	NodoA* aux = Raiz;
-	char espacio[90] = "	";
+	char espacio[90] = "├----";
 	std::cout<<aux->dato<<std::endl;
 	ImprimeArbol(aux, espacio);
 }

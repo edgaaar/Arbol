@@ -17,5 +17,6 @@ int main()
 	arbol.ExisteEl(12);
 
 	arbol.ImprimeArbol();
+	//arbol.ImprimeArbol(arbol.Raiz->Hijos[0],"----");
 	return 0;
 }
